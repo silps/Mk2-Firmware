@@ -38,49 +38,48 @@
 
 /* Mario main theme melody */
 const uint16_t melody[] = {
-  NOTE_E7, NOTE_E7, 0, NOTE_E7,
-  0, NOTE_C7, NOTE_E7, 0,
-  NOTE_G7, 0, 0,  0,
-  NOTE_G6, 0, 0, 0,
+  NOTE_E7,  NOTE_E7,        0,  NOTE_E7,
+        0,  NOTE_C7,  NOTE_E7,        0,
+  NOTE_G7,        0,        0,        0,
+  NOTE_G6,        0,        0,        0,
 
-  NOTE_C7, 0, 0, NOTE_G6,
-  0, 0, NOTE_E6, 0,
-  0, NOTE_A6, 0, NOTE_B6,
-  0, NOTE_AS6, NOTE_A6, 0,
+  NOTE_C7,        0,        0,  NOTE_G6,
+        0,        0,  NOTE_E6,        0,
+        0,  NOTE_A6,        0,  NOTE_B6,
+        0, NOTE_AS6,  NOTE_A6,        0,
 
-  NOTE_G6, NOTE_E7, NOTE_G7,
-  NOTE_A7, 0, NOTE_F7, NOTE_G7,
-  0, NOTE_E7, 0, NOTE_C7,
-  NOTE_D7, NOTE_B6, 0, 0,
+  NOTE_G6,  NOTE_E7,  NOTE_G7,  NOTE_A7,
+        0,  NOTE_F7,  NOTE_G7,        0,
+  NOTE_E7,        0,  NOTE_C7,  NOTE_D7,
+  NOTE_B6,        0,        0,  NOTE_C7,
+  
+         0,       0,  NOTE_G6,        0,
+         0, NOTE_E6,        0,        0,
+   NOTE_A6,       0,  NOTE_B6,        0,
+  NOTE_AS6, NOTE_A6,        0,  NOTE_G6,
+  
+  NOTE_E7,  NOTE_G7,  NOTE_A7,        0,
+  NOTE_F7,  NOTE_G7,        0,  NOTE_E7,
+        0,  NOTE_C7,  NOTE_D7,  NOTE_B6,
+        0,        0,  NOTE_C4,  NOTE_C5,
+  
+  NOTE_A3,  NOTE_A4,  NOTE_AS3, NOTE_AS4,
+        0,        0,   NOTE_C4,  NOTE_C5,
+  NOTE_A3,  NOTE_A4,  NOTE_AS3, NOTE_AS4,
+        0,        0,   NOTE_F3,  NOTE_F4,
+  
+  NOTE_D3,  NOTE_D4,  NOTE_DS3, NOTE_DS4,
+        0,        0,   NOTE_F3,  NOTE_F4,
+  NOTE_D3,  NOTE_D4,  NOTE_DS3, NOTE_DS4,
+        0,        0,  NOTE_DS4, NOTE_CS4,
+  
+   NOTE_D4, NOTE_CS4, NOTE_DS4, NOTE_DS4,
+  NOTE_GS3,  NOTE_G3, NOTE_CS4,  NOTE_C4,
+  NOTE_FS4,  NOTE_F4,  NOTE_E3, NOTE_AS4,
+   NOTE_A4, NOTE_GS4, NOTE_DS4,  NOTE_B3,
 
-  NOTE_C7, 0, 0, NOTE_G6,
-  0, 0, NOTE_E6, 0,
-  0, NOTE_A6, 0, NOTE_B6,
-  0, NOTE_AS6, NOTE_A6, 0,
-
-  NOTE_G6, NOTE_E7, NOTE_G7,
-  NOTE_A7, 0, NOTE_F7, NOTE_G7,
-  0, NOTE_E7, 0, NOTE_C7,
-  NOTE_D7, NOTE_B6, 0, 0,
-  NOTE_C4, NOTE_C5, NOTE_A3, NOTE_A4,
-  NOTE_AS3, NOTE_AS4, 0,
-  0,
-  NOTE_C4, NOTE_C5, NOTE_A3, NOTE_A4,
-  NOTE_AS3, NOTE_AS4, 0,
-  0,
-  NOTE_F3, NOTE_F4, NOTE_D3, NOTE_D4,
-  NOTE_DS3, NOTE_DS4, 0,
-  0,
-  NOTE_F3, NOTE_F4, NOTE_D3, NOTE_D4,
-  NOTE_DS3, NOTE_DS4, 0,
-  0, NOTE_DS4, NOTE_CS4, NOTE_D4,
-  NOTE_CS4, NOTE_DS4,
-  NOTE_DS4, NOTE_GS3,
-  NOTE_G3, NOTE_CS4,
-  NOTE_C4, NOTE_FS4, NOTE_F4, NOTE_E3, NOTE_AS4, NOTE_A4,
-  NOTE_GS4, NOTE_DS4, NOTE_B3,
-  NOTE_AS3, NOTE_A3, NOTE_GS3,
-  0, 0, 0
+  NOTE_AS3,  NOTE_A3, NOTE_GS3,        0,
+         0,        0,
 };
 
 /* Mario main theme tempo */
@@ -95,7 +94,7 @@ const uint16_t tempo[] = {
   12, 12, 12, 12,
   12, 12, 12, 12,
 
-  9, 9, 9,
+   9,  9,  9, 12,
   12, 12, 12, 12,
   12, 12, 12, 12,
   12, 12, 12, 12,
@@ -103,31 +102,30 @@ const uint16_t tempo[] = {
   12, 12, 12, 12,
   12, 12, 12, 12,
   12, 12, 12, 12,
+  12, 12, 12,  9,
+
+   9,  9, 12, 12,
+  12, 12, 12, 12,
+  12, 12, 12, 12,
   12, 12, 12, 12,
 
-  9, 9, 9,
   12, 12, 12, 12,
+   6,  3, 12, 12,
   12, 12, 12, 12,
+
+   6,  3, 12, 12,
   12, 12, 12, 12,
+   6,  3, 12, 12,
   12, 12, 12, 12,
-  12, 12, 6,
-  3,
-  12, 12, 12, 12,
-  12, 12, 6,
-  3,
-  12, 12, 12, 12,
-  12, 12, 6,
-  3,
-  12, 12, 12, 12,
-  12, 12, 6,
-  6, 18, 18, 18,
-  6, 6,
-  6, 6,
-  6, 6,
-  18, 18, 18, 18, 18, 18,
-  10, 10, 10,
-  10, 10, 10,
-  3, 3, 3
+
+   6,  6, 18, 18,
+  18,  6,  6,  6,
+   6,  6,  6, 18,
+  18, 18, 18, 18,
+
+  18, 10, 10, 10,
+  10, 10, 10,  3,
+   3,  3,
 };
 
 // Use this as a boilerplate app class. If you create a new one, make sure to also register it in the AppManager
@@ -155,45 +153,44 @@ bool SuperMarioApp::keepAlive() const {
 
 void SuperMarioApp::task() {
     // Do some setup in here
-    Tilda::getGUITask().clearRoot(); // Clean screen
+    Tilda::getGUITask().clearRoot();      // Clean screen
+    GLCD.SetRotation(ROTATION_180);       // Orientation
+    GLCD.SelectFont(Wendy3x5);            // Font
 
-    GLCD.SetRotation(ROTATION_180);   // Orientation
-
-    GLCD.SelectFont(System5x7);      // Font
-    Tilda::setLedColor({0, 0, 0});   // LEDs off
-
-    int x = 32;
-    int y = 64;
+    // Starting position for mario
+    int x = 48;
+    int y = 96;
+    // Pixels step for mario's movement
     int step = 8;
-    GLCD.DrawBitmap(SUPER_MARIO_TEST_XBM, y, x);
+
+    // Draw start screen
+    GLCD.DrawBitmap(MARIO_XBM, y, x);
+    GLCD.DrawBitmap(PIPE_XBM, 96, 8);
+    GLCD.DrawString("SUPER MARIO", 2, 2);
+
+    // Start to play mario theme
     uint16_t length = sizeof(melody) / sizeof(uint16_t);
-    Tilda::playMelody(melody, tempo, length);
+    //Tilda::playMelody(melody, tempo, length);
 
     while(true) { // Make sure this loop goes on forever     
         Button button = mButtonSubscription->waitForPress(1000); // Wait for up to a second for a button press
         // Make sure all the buttons you're interested in are defined in the constructor
         if (button == UP) {
-            Tilda::getGUITask().clearRoot();
             y -= step;
-            GLCD.DrawBitmap(SUPER_MARIO_TEST_XBM, y, x);
-            //Tilda::setLedColor({255, 0, 0}); // red
         } else if (button == DOWN) {
-            Tilda::getGUITask().clearRoot();
             y += step;
-            GLCD.DrawBitmap(SUPER_MARIO_TEST_XBM, y, x);
-            //Tilda::setLedColor({0, 255, 0}); // green
         } else if (button == LEFT) {
-            Tilda::getGUITask().clearRoot();
             x += step;
-            GLCD.DrawBitmap(SUPER_MARIO_TEST_XBM, y, x);
-            //Tilda::setLedColor({0, 0, 255}); // blue
         } else if (button == RIGHT) {
-            Tilda::getGUITask().clearRoot();
             x -= step;
-            GLCD.DrawBitmap(SUPER_MARIO_TEST_XBM, y, x);
-            //Tilda::setLedColor({255, 255, 255}); // white
-        } else {
-            //Tilda::setLedColor({255, 255, 255});   // LEDs off
+        }
+        // When the joystick was moved
+        if (button & (UP | DOWN | LEFT | RIGHT)) {
+            // Update the display
+            Tilda::getGUITask().clearRoot();
+            GLCD.DrawBitmap(MARIO_XBM, y, x);
+            GLCD.DrawBitmap(PIPE_XBM, 96, 8);
+            GLCD.DrawString("SUPER MARIO", 2, 2);
         }
     }
 }
