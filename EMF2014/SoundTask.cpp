@@ -36,9 +36,12 @@ Tone::Tone(const uint16_t note, const uint16_t duration, const uint16_t pauseAft
 };
 
 const void Tone::play() {
+    // play the note
     tone(PIEZO, _note, _duration);
+    // pause between notes
     vTaskDelay(_pauseAfterwards);
-    digitalWrite(PIEZO, LOW);
+    // end note
+    noTone(PIEZO);
 }
 
 SoundTask::SoundTask() {
@@ -51,7 +54,7 @@ void SoundTask::playMelody(const uint16_t melody[], const uint16_t tempo[], cons
     for (uint16_t index = 0; index < length; index++) {
         // calculate note duration
         const uint16_t noteDuration = 1000 / tempo[index];
-        const uint16_t pauseAfterwards = noteDuration * 1.30;
+        const uint16_t pauseAfterwards = noteDuration * 1.40;
 
         // queue up for future use
         playTone(melody[index], noteDuration, pauseAfterwards);
